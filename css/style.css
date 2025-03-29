@@ -1,0 +1,339 @@
+/* Definir estilos globais */
+* {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#header img {
+    width: 6%;
+    height: auto;
+}
+
+/* Menu de navegação */
+#menu {
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    border-bottom: 2px solid #5991dd;
+}
+
+#menu a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#menu a:hover {
+    background-color: #5991dd;
+}
+
+/* Banner */
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2% auto;
+    width: 96%; /* Considerando a margem de 2% para ambos os lados */
+    position: relative;
+}
+
+#banner-content {
+    width: 25%; /* Imagem ocupa 25% da tela */
+    position: relative;
+}
+
+#banner-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 2px solid #5991dd;
+    border-radius: 10px;
+}
+
+#content h1 {
+    text-align: center;
+    color: #87b6f6;
+}
+
+#content {
+    width: 73%; /* Restante da largura disponível */
+    margin-left: 2%;
+}
+
+#content_experience h1 {
+    text-align: center;
+    color: #87b6f6;
+    padding: 2%;
+}
+
+#content_experience {
+    width: 80%; /* Restante da largura disponível */
+    margin: auto;
+}
+
+#content_experience dl a {
+    background-color: #5991dd;
+    text-decoration: none;
+    padding: 2px;
+    margin-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #3877b1;
+}
+
+#content_experience dl a:hover {
+    background-color: #87b6f6;
+}
+
+#content_portifolio {
+    font-size: 16px; /* Define o tamanho da fonte */
+    width: 96%; /* Define a largura */
+    margin-left: 4%; /* Define a margem esquerda */
+    margin-bottom: 2%; /* Define a margem inferior */
+    margin-top: 2%;
+    display: flex; /* Faz com que os elementos filhos fiquem lado a lado */
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 20px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+#content_portifolio img {
+    width: 25%; /* Define um tamanho fixo para a imagem (ajuste conforme necessário) */
+    height: auto;
+    border: 2px solid #5991dd;
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+}
+
+#content_portifolio dl {
+    flex: 1; /* Faz com que o texto ocupe o espaço restante */
+}
+
+#content_portifolio dt {
+    color: #87b6f6; /* Define a cor do texto */
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#content_portifolio dd {
+    text-align: left; /* Posiciona o texto na esquerda */
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#content_contact {
+    display: flex;
+    flex-direction: column; /* Para empilhar os elementos de forma vertical */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100%; /* Faz o container ocupar toda a altura da tela */
+}
+
+#content_contact h1 {
+    flex: 1;
+    text-align: center; /* Centraliza o texto */
+    padding: 2%; /* Define a margem */
+    color: #87b6f6; /* Define a cor do texto */
+}
+
+#content_contact p {
+    text-align: center; /* Centraliza o texto */
+    margin: 0.5%; /* Define a margem */
+    color: whitesmoke; /* Define a cor do texto */
+}
+
+/* Estilos para os campos de entrada */
+#content_contact input {
+    border: 1px solid #5991dd; /* Adiciona uma borda */
+    border-radius: 6px; /* Adiciona bordas arredondadas */
+    width: 30%; /* Define a largura */
+    color: whitesmoke; /* Define a cor do texto */
+    padding: 5px; /* Adiciona espaço interno */
+    box-sizing: border-box; /* Considera as bordas e o preenchimento no cálculo do tamanho */
+}
+
+/* Estilos para o elemento com id "mensagem" */
+#content_contact #mensagem {
+    width: 30%; /* Define a largura */
+    height: 120px; /* Define a altura */
+    margin: 1%; /* Define a margem */
+    padding: 5px; /* Adiciona espaço interno */
+    border: 1px solid #5991dd; /* Adiciona uma borda */
+    border-radius: 6px; /* Adiciona bordas arredondadas */
+    box-sizing: border-box; /* Considera as bordas e o preenchimento no cálculo do tamanho */
+    color: whitesmoke; /* Define a cor do texto */
+}
+
+/* Estilos para o botão com id "button" */
+#content_contact #button {
+    border: 1px solid #3877b1; /* Adiciona uma borda */
+    border-radius: 6px; /* Adiciona bordas arredondadas */
+    margin: auto; /* Define a margem à esquerda */
+    margin-bottom: 1%;
+    width: 10%; /* Define o tamanho do botão */
+    box-sizing: border-box; /* Define o tamanho máximo do botão */
+    color: whitesmoke; /* Define a cor da letra do botão */
+    padding: 5px; /* Define a margem interna */
+    background-color: #5991dd;
+}
+
+#content_contact #button:hover {
+    border: 1px solid #3877b1; /* Adiciona uma borda */
+    background-color: #87b6f6;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.carousel-image:first-child {
+    display: block;
+}
+
+.carousel-item {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: #5991dd;
+    z-index: 2;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#prev {
+    left: 0.5%;
+}
+
+#next {
+    right: 76.5%;
+}
+
+
+#footer {
+    background-color: #1a1a1a;
+    color: whitesmoke;
+    padding: 20px 0;
+    border-top: 2px solid #5991dd;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#footer li {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#footer .title {
+    font-size: 16px;
+    color: #87b6f6;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#footer li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+#footer li a:hover {
+    background-color: #5991dd;
+    color: white;
+    padding: 5px;
+}
+
+/* Pop-up */
+.pop-up {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 80%;
+    box-shadow: 0 0 15px #3877b1;
+}
+
+.pop-up.active {
+    display: block;
+}
+
+.pop-up button {
+    background-color: #5991dd;
+    color: white;
+    border: none;
+    padding: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 42.5%;
+    margin-top: 2%;
+    width: 15%;
+}
+
+.pop-up button:hover {
+    background-color: #3877b1;
+}
