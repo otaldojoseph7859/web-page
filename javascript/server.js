@@ -28,7 +28,7 @@ app.post("/send-email", async (req, res) => {
     try {
         let info = await transporter.sendMail({
             from: process.env.EMAIL_USER,
-            to: "webbratechnology@gmail.com",
+            to: "seuemailvaiaqui@gmail.com",
             subject: "Nova mensagem do formulário de contato",
             text: `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`,
         });
